@@ -1,0 +1,19 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+  port: 8095
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spring_security
+    username: admin
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+          format_sql: true
+        show-sql: true

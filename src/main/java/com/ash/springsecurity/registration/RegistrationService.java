@@ -23,7 +23,6 @@ public class RegistrationService {
         return appUserService.signUpUser(new AppUser(request.getFirstName(),
                 request.getLastName(),
                 request.getEmail(),
-                request.getEmail(),
                 request.getPassword(),
                 AppUserRole.USER));
     }

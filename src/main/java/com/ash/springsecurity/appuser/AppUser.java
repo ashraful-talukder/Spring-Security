@@ -33,7 +33,7 @@ public class AppUser implements UserDetails {
     private Boolean locked;
     private Boolean enabled;
 
-    public AppUser(String name, String lastName, String requestEmail, String email, String firstName, AppUserRole user) {
+    public AppUser(String name, String lastName, String requestEmail, String email, AppUserRole user) {
         this.firstName = firstName;
         this.lastName = this.lastName;
         this.email = this.email;
